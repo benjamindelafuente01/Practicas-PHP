@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus&family=Playfair+Display:ital@0;1&display=swap');
+
+h1 {
+    font-family: 'Gentium Plus', serif;
+    font-size: 55px;
+    text-align:center;
+    color:#267BE9;
+    text-shadow: 2px 2px black;
+}
+
+.tituloSecundario {
+    font-family: 'Gentium Plus', serif;
+    font-size: 30px;
+    text-align:left;
+    color:#006eff;
+    margin: 0px 0px 0px 0px;
+}
+
+.envolturaFormulario {
+    width: 70%;
+    /* height: 100%; */
+    margin: 50px auto;
+    display: flex;
+    background: #fff;
+    border-radius: 10px
+}
+
+/**********Sección de Contacto*************/
+.seccionContacto {
+    text-align: center;
+    width: 38%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background: #5889f3;
+}
+
+.seccionContacto span {
+    margin-bottom: 0%;
+}
+
+.iconos {
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.imgContacto{
+    display: block;
+    margin-left: 5%;
+}
+
+.seccionFormulario {
+    width: 62%;
+}
+
+/**********Sección de Formulario*************/
+.seccionFormulario {
+    background-color: #fff;
+    /* padding: 20px; */
+    border-radius: 8px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); */
+}
+
+fieldset {
+    border: line;
+    /* padding: 5px; */
+    border-radius: 8px;
+}
+
+legend {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="textarea"] {
+            width: 70%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="textarea"] {
+            height: 80px;
+            /* resize: none; */
+        }
+
+
+input[type="submit"] {
+    width: 30%;
+    padding: 5px;
+    background-color: #5889f3;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 0px auto 0;
+    display: block;
+}
+
+input[type="submit"]:hover {
+    background-color: #0987db;
+}
+
+.alert {
+    padding: 1em;
+    color: #fff;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    width: 70%;
+}
+
+.error {
+    background: #F2DEDE;
+    border: 1px solid #a94442;
+    color: #a94442;
+}
+
+.succes {
+    background: #4CAF50;
+}
