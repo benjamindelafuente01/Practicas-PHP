@@ -2,8 +2,8 @@
 
     // Datos para la conexion
     $server = 'localhost';
-    $user = 'root';
-    $password = 'datos2021';
-    $dbname = 'ejemplo_cursophp';
+    $user = '';                 // Your db user
+    $password = '';             // Your password
+    $dbname = '';               // Your db name
 
 ?>
