@@ -1,0 +1,115 @@
+body {
+    background-color: #CFF4FC;
+    font-family: Arial, sans-serif; /* Fuente más legible */
+    margin: 0;
+    padding: 20px; /* Añadir espaciado alrededor */
+}
+
+/****************************************************************************
+*                       Estilos de la tabla                                 *
+****************************************************************************/
+
+table {
+    background-color: #ffffff;
+    border: 1px solid #02a3d4;
+    width: 50%; /* Ajustar el ancho para mejor adaptación en pantallas pequeñas */
+    margin: auto;
+    border-collapse: collapse;  /* Unir los bordes */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añadir sombra */
+    overflow: hidden; /* Para manejar el border-radius en navegadores más antiguos */
+}
+
+td, th { /* Aplicar estilos tanto a celdas como a encabezados */
+    padding: 12px 15px; /* Añadir espaciado interno */
+    border: 1px solid #02a3d4;
+    text-align: center;
+    color: #333; /* Cambiar el color del texto para mejor legibilidad */
+}
+
+th {
+    background-color: #02a3d4; /* Fondo para encabezados */
+    color: #ffffff; /* Color del texto para encabezados */
+    font-weight: bold; /* Negrita para diferenciar encabezados */
+}
+
+tr:nth-child(even) { /* Filas pares con color de fondo */
+    background-color: #f2f2f2;
+}
+
+tr:hover { /* Efecto hover en filas */
+    background-color: #e0f7fa;
+}
+
+caption { /* Estilo para el título de la tabla */
+    caption-side: top;
+    padding: 10px;
+    font-size: 1.5em;
+    color: #02a3d4;
+    font-weight: bold;
+}
+
+/****************************************************************************
+*                  Estilos del contenedor de busqueda                       *
+****************************************************************************/
+
+.contenedor-busqueda {
+    background-color: #ffffff;
+    border: 1px solid #02a3d4;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+}
+
+input[type="submit"] {
+    width: 15%;
+    padding: 5px;
+    background-color: #0B5ED7;
+    color: #ffffff;
+    border-color: #0B5ED7;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: #0c4cd6;
+    border-color: #0c4cd6;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    margin-top: 5px;
+    background-color: #F8F9FA;
+    width: 35%;
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+.contenedor-resultado {
+    width: 100%;
+    margin: auto;
+    /* text-align: center; */
+}
+
+.mensaje-consulta-exito {
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.mensaje-consulta-error {
+    width: 30%;
+    background: #F2DEDE;
+    border: 1px solid #a94442;
+    color: #a94442;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 5px; 
+}
