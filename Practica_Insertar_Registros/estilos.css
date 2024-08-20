@@ -1,0 +1,135 @@
+body {
+    background-color: #CFF4FC;
+    font-family: Arial, sans-serif;
+    padding: 10px; /* Añadir espaciado alrededor */
+}
+
+.form-registros {
+    width: 60%;
+    margin:auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    margin-top: -1px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+hr {
+    margin-bottom: 2rem;
+}
+
+/*********************************************************
+*                    Estilos tabla                       *
+*********************************************************/
+
+table {
+    background-color: #ffffff;
+    width: 100%;
+    border: 1px solid none;
+    border-radius: 10px;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+td, th { /* Aplicar estilos tanto a celdas como a encabezados */
+    padding: 10px 10px; /* Añadir espaciado interno */
+    text-align: center;
+    color: #333; /* Cambiar el color del texto para mejor legibilidad */
+    font-weight: bold;
+}
+
+th {
+    background-color: #02a3d4; /* Fondo para encabezados */
+    color: #ffffff; /* Color del texto para encabezados */
+    font-weight: bold; /* Negrita para diferenciar encabezados */
+}
+
+tr:hover { /* Efecto hover en filas */
+    background-color: #e0f7fa;
+}
+
+
+
+input[type="text"] {
+    width: 50%;
+    padding: 3px;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: #F8F9FA;
+}
+
+
+/*********************************************************
+*                  Estilos botones                       *
+*********************************************************/
+
+input[type="submit"] {
+    margin: 15px;
+    padding: 12px;
+    background-color: #0B5ED7;
+    color: #ffffff;
+    border-color: #0B5ED7;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: #0c4cd6;
+    border-color: #0c4cd6;
+    font-weight: bold;
+}
+
+input[type="reset"] {
+    margin: 15px;
+    padding: 12px;
+    background-color: #e90000;
+    color: #ffffff;
+    border-color: #e90000;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+input[type="reset"]:hover {
+    background-color: #da0000;
+    border-color: #da0000;
+    font-weight: bold;
+}
+
+/*********************************************************
+*                 Estilos resultados                     *
+*********************************************************/
+
+.contenedor-resultado {
+    padding-top: 5px;
+    padding-bottom: 3px;
+}
+
+.alert {
+    margin: auto;
+    padding: 1em;
+    color: #fff;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    width: 40%;
+    font-weight: bold;
+}
+
+.error {
+    background: #F2DEDE;
+    border: 1px solid #a94442;
+    color: #a94442;
+    border-radius: 5px;
+    
+}
+
+.success {
+    background: #4CAF50;
+    border-radius: 5px;
+    
+}
