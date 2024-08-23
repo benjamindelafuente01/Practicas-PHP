@@ -6,7 +6,7 @@
     function mostrarResultados($busquedaUsuario) {
 
         // Inlcuimos los datos para la conexion
-        require 'datos_conexion.php';
+        require '../Datos conexion/datos_conexion.php';
         
         // Instancia de mysqli
         $conexion = new mysqli($server, $user, $password, $dbname);

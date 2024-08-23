@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrar un nuevo producto</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="../Estilos/estilos_altas.css">
 </head>
 <body>
 
@@ -83,9 +83,11 @@
 
             </table>
 
-            <input type="reset" value="Eliminar">
+            <input type="button" class="btn-volver" onclick="window.location.href='../index.php'" value="  Volver  ">
+
+            <input type="reset" class="btn-eliminar" value="Eliminar">
                     
-            <input type="submit" name="btn_alta_registro" id="btn_alta_registro" value="Registrar">
+            <input type="submit" class="btn-registrar" name="btn_alta_registro" id="btn_alta_registro" value="Registrar">
 
         </form>
 
