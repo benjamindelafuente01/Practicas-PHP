@@ -5,8 +5,8 @@
     *******************************/
 
     $server = 'localhost';
-    $user = '';
-    $password = '';
-    $dbname = '';
+    $user = 'root';
+    $password = 'datos2021';
+    $dbname = 'ejemplo_cursophp';
 
 ?>

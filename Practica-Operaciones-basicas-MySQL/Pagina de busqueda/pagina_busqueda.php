@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buscar artículos</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="../Estilos/estilos_busqueda.css">
 </head>
 <body>
 
@@ -14,7 +14,8 @@
         <div class="contenedor-busqueda">
             <label for="nombre_articulo">Ingrese un artículo: </label> <br>
             <input type="text" name="nombre_articulo" id="nombre_articulo" required> <br> <br>
-            <input type="submit" name="btn_buscar_articulo" id="btn_buscar_articulo" value="Buscar"> <br> <br>
+            <input type="button" class="btn-volver" onclick="window.location.href='../index.php'" value="  Volver  ">
+            <input type="submit" class="btn-buscar" name="btn_buscar_articulo" id="btn_buscar_articulo" value="  Buscar  "> <br> <br>
         </div>
         <br><br>
     </form>

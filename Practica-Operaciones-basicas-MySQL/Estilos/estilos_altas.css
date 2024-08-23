@@ -68,7 +68,25 @@ input[type="text"] {
 *                  Estilos botones                       *
 *********************************************************/
 
-input[type="submit"] {
+.btn-volver {
+    margin: 15px;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #a4acb9;
+    color: #ffffff;
+    border-color: #a4acb9;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn-volver:hover {
+    background-color: #a2a8b1;
+    border-color: #a2a8b1;
+    font-weight: bold;
+}
+
+.btn-registrar {
     margin: 15px;
     padding: 12px;
     background-color: #0B5ED7;
@@ -78,13 +96,13 @@ input[type="submit"] {
     font-weight: bold;
 }
 
-input[type="submit"]:hover {
+.btn-registrar:hover {
     background-color: #0c4cd6;
     border-color: #0c4cd6;
     font-weight: bold;
 }
 
-input[type="reset"] {
+.btn-eliminar {
     margin: 15px;
     padding: 12px;
     background-color: #e90000;
@@ -94,7 +112,7 @@ input[type="reset"] {
     font-weight: bold;
 }
 
-input[type="reset"]:hover {
+.btn-eliminar:hover {
     background-color: #da0000;
     border-color: #da0000;
     font-weight: bold;
