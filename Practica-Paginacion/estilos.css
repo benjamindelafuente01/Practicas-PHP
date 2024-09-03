@@ -1,0 +1,134 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background: #e9e9e9;
+	color: #2e2e2e;
+	font-family: Arial, helvetica, sans-serif;
+}
+
+.contenedor {
+	width: 80%;
+	max-width: 1000px;
+	margin: auto; 
+}
+
+h1 {
+	margin: 20px 0;
+	text-align: center;
+	font-family: "Oswald", Arial, helvetica, sans-serif;
+	color: #ce7f08;
+	font-weight: bold;
+	font-size: 3rem;
+}
+
+
+/******************************
+	Estilos para listas
+*/
+
+/* .contenedor .articulos {
+	margin-bottom: 20px;
+}
+
+.contenedor .articulos ul {
+	list-style: none;
+}
+
+.contenedor .articulos ul li {
+	padding:15px 10px;
+	border-bottom: 1px solid #c8c8c8;
+} */
+
+/*
+	Estilos para tabla
+*/
+
+table {
+    background-color: #ffffff;
+    border: 1px solid #60d402;
+    width: 80%; /* Ajustar el ancho para mejor adaptación en pantallas pequeñas */
+    margin: auto;
+    border-collapse: collapse;  /* Unir los bordes */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añadir sombra */
+    overflow: hidden; /* Para manejar el border-radius en navegadores más antiguos */
+	margin-bottom: 30px;
+}
+
+td, th { /* Aplicar estilos tanto a celdas como a encabezados */
+    padding: 12px 15px; /* Añadir espaciado interno */
+    border: 1px solid #424242;
+    text-align: center;
+    color: #333; /* Cambiar el color del texto para mejor legibilidad */
+}
+
+th {
+    background-color: #424242; /* Fondo para encabezados */
+    color: #ffffff; /* Color del texto para encabezados */
+    font-weight: bold; /* Negrita para diferenciar encabezados */
+}
+
+tr:nth-child(even) { /* Filas pares con color de fondo */
+    background-color: #f2f2f2;
+}
+
+tr:hover { /* Efecto hover en filas */
+    background-color: #cac9c9;
+}
+
+
+
+
+
+
+
+.paginacion ul {
+	list-style: none;
+}
+
+.paginacion ul li {
+	display: inline-block;
+	margin-right: 10px; 
+}
+
+.paginacion ul .active a {
+	background: #ce7f08;
+}
+
+.paginacion ul .disabled {
+	background: #c8c8c8;
+	display: inline-block;
+	font-family: "Oswald", Arial, helvetica, sans-serif;
+	padding: 15px 25px;
+	cursor:not-allowed;
+	color:#fff;
+	text-decoration: none;
+}
+
+.paginacion ul li a {
+	display: inline-block;
+	font-family: "Oswald", Arial, helvetica, sans-serif;
+	padding: 15px 25px;
+	background: #424242;
+	color:#fff;
+	text-decoration: none;
+}
+
+.paginacion ul li a:hover {
+	text-decoration: none;
+	background: #3299bb;
+}
+
+.paginacion {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+  }
