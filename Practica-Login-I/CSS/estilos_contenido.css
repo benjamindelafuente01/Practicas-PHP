@@ -1,0 +1,38 @@
+body {
+	font-size: 16px;
+	font-family: 'Raleway', sans-serif;
+	background: #1B1D35;
+	color:#fff;
+}
+
+a {
+	text-decoration: none;
+    color: #fff;
+	background-color:#B8711B;
+    padding: 5px;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.contenedor {
+	max-width: 500px;
+	width: 90%;
+	margin: auto;
+}
+
+.titulo {
+	font-weight: 300;
+	color: #B8711B;
+	text-align: center;
+	margin: 60px 0 30px 0;
+}
+
+.border {
+	border:none;
+	margin-bottom: 5px; 
+	border-top:10px solid #B8711B;
+	background: none;
+	color:none;
+}
