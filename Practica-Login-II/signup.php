@@ -25,9 +25,12 @@
             header ('Location: Views/signup_view.php');
 
         } else {
+            
+            // Encriptamos contraseña
+            $contra_cifrada = password_hash($contra1, PASSWORD_ARGON2ID);
 
             // Insertamos usuario
-            $insertarUsuario = $registroUsuario->registrarNuevoUsuario($nombre, $contra1);
+            $insertarUsuario = $registroUsuario->registrarNuevoUsuario($nombre, $contra_cifrada);
     
             if ($insertarUsuario) {
                 // Creamos una nueva sesión y reedirigimos

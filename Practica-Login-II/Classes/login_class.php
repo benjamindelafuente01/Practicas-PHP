@@ -19,19 +19,23 @@
         public function consultarUsuario($usuario, $contra) {
 
             // Estructura de la consulta
-            $query = "SELECT * FROM usuarios WHERE nombre = :username AND contra = :password";
+            $query = "SELECT * FROM usuarios WHERE nombre = :username";
             // Preparamos la consulta
             $stmtQuery = $this->conexion_pdo->prepare($query);
             // Asociamos valores
             $stmtQuery->bindValue(':username', $usuario);
-            $stmtQuery->bindValue(':password', $contra);
             // Ejecutamos la consulta
             $stmtQuery->execute();
 
             // Verificamos si el usuario y contraseña son correctos
-            $resultado = $stmtQuery->rowCount() > 0 ? true : false;
+            $resultado = $stmtQuery->fetch(PDO::FETCH_ASSOC);
 
-            return $resultado;
+            // Si el usuario existe y la contraseña es igual a la encriptada
+            if ($resultado && password_verify($contra, $resultado['contra'])) {
+                return true;
+            }
+
+            return false;
         }
     }
 
