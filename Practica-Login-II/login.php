@@ -20,6 +20,13 @@
         $acceso = $login->consultarUsuario($usuario, $contra);
 
         if ($acceso) {
+
+            // Verificamos si se marcó casilla de recordar usuario
+            if (isset($_POST['remember_user'])) {
+                // Creamos cookie
+                setcookie('recordar_usuario', $usuario, time() + 86400, '/');
+            }
+
             // Creamos una nueva sesión
             session_start();
             // Agregamos un identificador y un valor a la sesión
