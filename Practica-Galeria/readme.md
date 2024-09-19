@@ -21,18 +21,20 @@ base de datos utilizando tecnologías como PHP y MySQL.
 * Eliminar fotos: Haz clic en una imagen y selecciona "Eliminar" para borrarla.
 
 📂 Estructura de carpetas
+```
 /Practica-Galeria-Dinamica
 │
 ├── /Connection         # Archivos de conexión, configuración y consultas a la base de datos
 ├── /CSS                # Hoja de estilos para el sitio
 ├── /fotos_subidas      # Carpeta donde se almacenan las imágenes subidas
 ├── /Icons              # Carpeta con los iconos de la aplicación
-├── /imagenes_ejemplo   # Carpeta con imagenes de ejemplo para cargar en el sitio
+├── /imagenes_ejemplo   # Carpeta con imágenes de ejemplo para cargar en el sitio
 ├── /Views              # Vistas HTML/PHP
-├── eliminar_foto.php   # Script llama a la clase que elimina la imagen seleccionada de la base de datos y la carpeta
+├── eliminar_foto.php   # Script que elimina la imagen seleccionada de la base de datos y la carpeta
 ├── index.php           # Página principal del proyecto
 ├── mostrar_foto.php    # Script que trae la imagen seleccionada de la base de datos y la muestra en la vista
-└── subir_foto.php      # Script que llama a la clase para insertar una nueva foto en la base de datos y añadirla a la carpeta
+└── subir_foto.php      # Script para insertar una nueva foto en la base de datos y añadirla a la carpeta
+```
 
 🛢️ Base de datos
 * Un nombre cualquiera en para tu base de datos, recuerda que debes definir el servidor, nombre y usuario en el 
