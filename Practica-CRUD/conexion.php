@@ -24,6 +24,8 @@
 
                 // Establecemos para que PDO lance Excepciones
                 $this->conexionPDO->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                // Desactivamos las preparaciones emuladas para poder pasar un arreglo con execute() en PDO
+                $this->conexionPDO->setAttribute( PDO::ATTR_EMULATE_PREPARES, false );
 
             } catch (PDOException $e) {
                 die ('Error al conectar: ' . $e->getMessage());
@@ -45,14 +47,16 @@
 
 
         // Método para obtener (leer) los registros
-        public function readUsers() {
+        public function readUsers($lowerLimit, $upperLimit) {
 
             // Sentencia SQL
-            $sql = "SELECT * FROM datosusuarios";
+            $sql = "SELECT * FROM datosusuarios LIMIT :limiteInferior, :limiteSuperior";
             // Preparamos consulta
             $stmt = $this->conexionPDO->prepare($sql);
+            // Asociamos valores
+            $marcadores = [':limiteInferior' => $lowerLimit, ':limiteSuperior' => $upperLimit];
             // Ejecutamos consulta
-            $stmt->execute();
+            $stmt->execute($marcadores);
             // Guardamos resultado
             $resultado = $stmt->fetchAll(PDO::FETCH_OBJ);
 
@@ -143,6 +147,22 @@
 
             // Verificamos resultado
             $resultado = $stmt->rowCount() > 0 ? true : false;
+
+            return $resultado;
+        }
+
+        // Método para obtener el total de registros
+        public function totalUsers() {
+
+            // Consulta SQL
+            $sql = "SELECT COUNT(*) AS totalFilas FROM datosusuarios";
+            // Preparamos la consulta
+            $stmt = $this->conexionPDO->prepare($sql);
+            // Ejecutamos la consulta
+            $stmt -> execute();
+
+            // Verificamos resultado
+            $resultado = $stmt->fetch()['totalFilas'];
 
             return $resultado;
         }
