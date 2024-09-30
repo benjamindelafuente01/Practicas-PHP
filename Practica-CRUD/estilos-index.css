@@ -141,3 +141,21 @@ input[type="text"] {
     border-radius: 8px;
     border: 1px solid #29508f;
 }
+
+
+.paginacion {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}
+
+.pagina {
+    background-color: #f1f1f1;
+    color: #4071C1;
+    text-decoration: none;
+    margin: 5px;
+    padding: 15px;
+    font-weight: bold;
+}
