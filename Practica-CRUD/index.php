@@ -23,8 +23,30 @@
 
                 // Instancia de la clase
                 $usuarios = new CRUD();
+
+                /*
+                    Creamos variables para la paginacion
+                */
+                // Página actual
+                $pagina_actual = (isset($_GET['pagina'])) ? (int) $_GET['pagina'] : (int) 1;
+
+                // Número de registros que aparecerán por pagina
+                $registros_por_pagina = 3;
+
+                // Desde qué registro se van a mostrar dependiendo de la página
+                $inicio_mostrar_registros = ($pagina_actual - 1) * $registros_por_pagina;
+
+                // Consultamos el total de registros (si no hay registros asignamos un 1)
+                $total_registros = $usuarios->totalUsers() > 0 ? $usuarios->totalUsers() : (int) 1;
+
+                // Total de páginas que se van a crear
+                $total_paginas = ceil($total_registros / $registros_por_pagina);
+
+                /*
+                    Consultamos usuarios
+                */
                 // Obtenemos usuarios
-                $registros = $usuarios->readUsers();
+                $registros = $usuarios->readUsers($inicio_mostrar_registros, $registros_por_pagina);
 
                 // Validamos el registro
                 if ($registros != false) {
@@ -87,6 +109,15 @@
             
         </table>
     </form>
+
+    <!-- Paginación -->
+    <?php
+        echo '<div class="paginacion">';
+        for ($i=1; $i<=$total_paginas; $i++) {
+            echo '<a class="pagina" href="index.php?pagina=' . $i . '">' . $i . '</a> ';
+        }
+        echo '</div>';
+    ?>
 
     <?php
 
