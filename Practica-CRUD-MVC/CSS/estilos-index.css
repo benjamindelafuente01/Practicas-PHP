@@ -1,0 +1,161 @@
+body {
+    background-color: #29508f;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 3rem;
+    margin: 20px 0;
+}
+
+h2 {
+    margin: 20px auto;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.subtitulo {
+    font-size: 20px;
+    color: #fff;
+    display: block;
+    margin-top: 10px;
+}
+
+table {
+    width: 70%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #4071c1;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+table td {
+    color: #333;
+}
+
+/* Estilos para que la tabla sea responsiva */
+@media (max-width: 768px) {
+    table {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    table th, table td {
+        padding: 10px;
+    }
+}
+
+.mensaje-error {
+    margin: auto;
+    padding: 1em;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 18px;
+    width: 20%;
+    background: #F2DEDE;
+    border: 1px solid #a94442;
+    color: #a94442;
+    text-align: center;
+}
+
+
+.contenedor-botones {
+    margin: auto;
+    text-align: center;
+}
+
+
+.btn-volver {
+    padding: 7px;
+    margin: 10px;
+    margin-top: 20px;
+    background-color: #a4acb9;
+    color: #ffffff;
+    border-color: #a4acb9;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn-volver:hover {
+    background-color: #a2a8b1;
+    border-color: #a2a8b1;
+    font-weight: bold;
+}
+
+.btn-actualizar {
+    padding: 7px;
+    margin: 10px;
+    margin-top: 20px;
+    background-color: #4071c1;
+    color: #ffffff;
+    border-color: #4071c1;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 90%;
+    background-color: #F8F9FA;
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+.agregar-usuario {
+    color:#ffff;
+    font-weight: bold;
+    width: 80%;
+    background-color: #29508f;
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid #29508f;
+}
+
+
+.paginacion {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}
+
+.pagina {
+    background-color: #f1f1f1;
+    color: #4071C1;
+    text-decoration: none;
+    margin: 5px;
+    padding: 15px;
+    font-weight: bold;
+}
