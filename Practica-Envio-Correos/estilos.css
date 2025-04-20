@@ -1,0 +1,60 @@
+body {
+    background-color: #CFF4FC;
+    background-image: linear-gradient(45deg, #CFF4FC 0%, #74B9FF 50%, #A2D9CE 75%, #99BBFF 100%);
+}
+
+.contenedor-formulario {
+    width: 40%;
+    margin: auto; /* Centrar el contenedor y agregar margen superior */
+    background-color: #f9f9f9; /* Fondo suave para destacar el formulario */
+    padding: 15px; /* Espacio alrededor del contenido */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera para dar profundidad */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+form {
+    text-align: center;
+}
+
+fieldset {
+    border: 1px solid #ccc; /* Especificar borde del fieldset */
+    border-radius: 8px;
+    padding: 10px; /* Agregar padding para dar espacio dentro del fieldset */
+    background-color: #fff; /* Fondo blanco */
+}
+
+legend {
+    font-size: 1.8em; /* Aumentar el tamaño del texto */
+    margin-bottom: 20px; /* Separar del contenido */
+    color: #333; /* Color del texto */
+}
+
+input[type="text"], input[type="email"], input[type="number"], input[type="textarea"] {
+    width: 90%; /* Anchura del input */
+    padding: 10px; /* Espacio dentro de los inputs */
+    margin: 5px 0; /* Márgenes para separar los inputs */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Evita que el padding aumente el tamaño del input */
+    font-size: 1em; /* Tamaño de fuente claro */
+    background-color: #f5f5f5; /* Fondo claro en los inputs */
+}
+
+input[type="textarea"] {
+    height: 100px; /* Altura del campo textarea */
+}
+
+input[type="submit"] {
+    background-color: #376dbe; /* Fondo verde */
+    color: white; /* Texto blanco */
+    padding: 12px 20px; /* Relleno dentro del botón */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; /* Cambia el cursor a pointer al pasar sobre el botón */
+    font-size: 1.1em; /* Texto más grande */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+input[type="submit"]:hover {
+    background-color: #2874e6; /* Cambiar el color al pasar el mouse */
+}
